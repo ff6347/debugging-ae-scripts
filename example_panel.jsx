@@ -1,5 +1,8 @@
 {
-    
+#include 'debug_writer.jsx';
+
+var DBug = new Debugger();
+
 run_script(this);
 
 
@@ -41,6 +44,7 @@ if ((win != null) && (win instanceof Window)) {
 
         win.sequence_check.onClick = function (){
             alert("check");
+            DBug.debugstrings.push("in check");
         };
         win.help_button.onClick = function () {
           alert("help");
@@ -57,5 +61,6 @@ if ((win != null) && (win instanceof Window)) {
 function main(metaobj){
 
     alert("in function main. From here on it is a straight run");
+    DBug.write_infos();
 };
 }
