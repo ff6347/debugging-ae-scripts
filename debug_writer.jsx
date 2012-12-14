@@ -1,5 +1,8 @@
 // functions for debugging
-
+/**
+ * This function is
+ * @deprecated use Debugger.jsx
+ */
 function Debugger(){
 this.filename ="debuginfo";
 this.filepath = "~/Desktop/"+ this.filename +".txt";

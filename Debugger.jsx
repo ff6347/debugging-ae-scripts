@@ -26,9 +26,9 @@
  */
 
 
-function Debugger(dbg,title,message){
+function Debugger(dbg,title,message,fn){
 this.DEBUG = dbg;
-this.filename ="debuginfo";
+this.filename = fn;
 this.filepath = "~/Desktop/"+ this.filename +".txt";
 this.debugstrings = [title];
 this.messageString = message;
@@ -42,7 +42,7 @@ this.debugstrings.push(line);
 this.message = function(){
 
 if(this.DEBUG == true){
-    alert(this.messageString);
+    alert(title + "\n" + this.messageString);
     }
 };
 
