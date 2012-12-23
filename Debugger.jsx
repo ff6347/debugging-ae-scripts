@@ -33,6 +33,10 @@ this.filepath = "~/Desktop/"+ this.filename +".txt";
 this.debugstrings = [title];
 this.messageString = message;
 
+this.init = function (){
+  this.debugstrings.push(this.messageString);
+  this.debugstrings.push(this.filename);
+}
 this.addLineToInfo = function (line){
 if(this.DEBUG == true){
 this.debugstrings.push(line);
