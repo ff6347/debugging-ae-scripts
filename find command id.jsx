@@ -1,0 +1,1 @@
+﻿ var res = app.findMenuCommandId("Neue Maske");  alert(res);    app.executeCommand(res); // 2367 : app.findMenuCommandId("New Mask")

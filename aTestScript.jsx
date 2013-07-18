@@ -1,0 +1,1 @@
+﻿/*needs som additional data from the outside*/(function(thisObj){fun();function fun(){app.beginUndoGroup("XXX");var curComp = app.project.activeItem;   if (!curComp || !(curComp instanceof CompItem)){        alert("noComp");        return;    };alert(info);app.endUndoGroup();}})(this);
